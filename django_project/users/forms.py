@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserChangeForm
 
 class UserRegisterForm(UserChangeForm):
+    password = None
     email = forms.EmailField(required=True)
 
     class Meta:
